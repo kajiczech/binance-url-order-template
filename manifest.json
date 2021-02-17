@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Binance URL order template",
+  "description": "This plugin will read data from URL and prefill your order from it.",
+  "version": "1.0",
+
+  "icons": {
+    "48": "Logo_trader2.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.binance.com/*"],
+      "js": ["display.js"]
+    }
+  ]
+}
